@@ -1,0 +1,38 @@
+az login
+az account set --subscription 33180adb-667d-4153-96fd-ee1d916cdb50
+
++
+Create Storage account
+resource group: StorageMedia
+region: WEST Europe
+name: mediastorebadiibayoudh
+redundancy: LRS
+copy Connection String:
+jdO96iOXEcfdn3Cma8OWQ0KXgVMMn73eEq78EoQYBoKQL+9XlYcgsPYNl+Yis/5/XmXR6PXf/kW5+AStYWTm2A==
+copy Blob Service:
+https://mediastorebadiibayoudh.blob.core.windows.net/
+
++
+
+copy blob service
+copy storage accoutn name
+acces key1 (not the connection string)
+
+datastorage => container
+
+create private container: raster-graphics
+upload file to it
+create private container: compressed-audio
+
++
+cd F:\Allfiles\Labs\03\Starter\BlobManager
+dotnet new console
+dotnet add 
+dotnet build
+code .
+implemnt the program.cs
+vs code>terminal>new terminal
+in the embedded terminal enter: dotnet run
++
+
+
