@@ -1,0 +1,60 @@
++ create Azure cosmos DB
+create new resource group: Polyglotdata
+Name: polycosmosbadiibayoudh
+Region: west Europe
+Capacity ../invoice: serverless
+
+URI
+https://polycosmosbadiibayoudh.documents.azure.com:443/
+
+Primary Key
+sOosT0lYEf5WzcUd54LvQD267HYE3ZTmlTMnPGsWeAROIWxTsbt7TI53xCYbx1KNaH5EvVZFkZ9QACDbZdZlJA==
+
+Primary Connection String
+AccountEndpoint=https://polycosmosbadiibayoudh.documents.azure.com:443/;AccountKey=sOosT0lYEf5WzcUd54LvQD267HYE3ZTmlTMnPGsWeAROIWxTsbt7TI53xCYbx1KNaH5EvVZFkZ9QACDbZdZlJA==;
++
+Create Storage Account
+
+Name: polystorebadiibayoudh
+Region: West Europe
+LRS
+create a blob container
+container URL (in the properties):
+https://polystorebadiibayoudh.blob.core.windows.net/images
+upload images
+
++
+cd F:\Allfiles\Labs\04\Starter\AdventureWorks
+code .
+cd AdventureWorks.Upload
+dotnet add package Microsoft.Azure.Cosmos
+
++
+In Program.cs
+paste endpoint uri
+paste primary key
+specify the partition key : "/Category"
+paste json path:
+F:\Allfiles\Labs\04\Starter\AdventureWorks\AdventureWorks.Upload
+
+//populate the database with the json doument content
+dotnet run
++
+CosmsDB->data Exploerer
+
+execute query: SELECT VALUE COUNT(1) FROM models
+
++
+web project uses context and model projects
+
+in appsettings.json 
+paste end point
+paste blob container url
+
++
+cd ..
+cd AdventureWorks.Context
+dotnet add package Microsoft.Azure.Cosmos
+implement
+dotnet build
+dotnet run
