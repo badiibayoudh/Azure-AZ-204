@@ -1,0 +1,138 @@
+
+A- Create web application and run it locally
+1- cd D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01
+2- mkdir webapp1
+3- create a templete project: dotnet new webapp
+4- run locally the web app: dotnet run
+
+B- Deploy web app on zure using CLI
+1- az webapp list --resource-group
+
+2- dontnet publish --configuration Release --output .\bin\publish
+
+3- compress-Archive .\bin\publish* .\bin\app.zip
+
+4- az webapp deployment source config-zip --src .\bin\app.zip --name xxx --resource-group xxx
+
+C- Deploy web app on azure using Visual Studio
+
+1- code .
+
+D- 
+1- create a jsn config file
+2- redeploy the waeb app and override
+
+5-
+
+
+
+E- Clear azure
+
+
+F- 
+create "storage account"
+
+resource group: ManagedPlatform
+storage account name: imgbadiibayoudh
+
+
+access key 1
+
+terminal
+
+as login wil triggewr a web browser
+
+az account set --name 33180adb-667d-4153-96fd-ee1d916cdb50
+
+az webapp list --resource-group ManagedPlatform
+
+app name 2: imgbadiibayoudh2
+
+in app setting copy the url of first app : https://ingbadiibayoudh.azurewebsites.net/
+
+-----
+
+
+
+
+JcCQv0dB1ZjlQC5fgjWFkmTBKb4yS9SooRpq7r5Bop3jiR1Tu7rffkoibWZYalXPsYt9YM7DFXtU+ASth1CALw==
+
+
+
+DefaultEndpointsProtocol=https;AccountName=imgbadiibyoudh;AccountKey=JcCQv0dB1ZjlQC5fgjWFkmTBKb4yS9SooRpq7r5Bop3jiR1Tu7rffkoibWZYalXPsYt9YM7DFXtU+ASth1CALw==;EndpointSuffix=core.windows.net
+
+Affiliates/Labs/01 Starter
+
+in data storage create container: images
+
+create a container and upload an image to it
+webapp1 name: imgapibadiibayoudh
+
+webapp2 name: 
+
+create a plan: managed plan
+
+go to settings / cnfiguration
+
+Setting name: StorageConnectionString
+copy the key to it
+
+in visua studio open F:\Allfiles\Labs\01\Starter\API
+
+in a new terminal in visual studio code type dotnet build
+
+az login
+
+az webapp --list --resource-group ManagedPlatform
+
+z webapp --list --resource-group ManagedPlatform
+
+StarterAPI  az webapp deployment source config-zip --resource-roup ManagedPlatform --src api.zip --name imgbadiibayoudj
+az webapp deployment source config-zip --resource-group ManagedPlatform --src api.zip --name imgapibadiibayoudh
+
+
+cd F:\Allfiles\Labs\01\Starter
+
+az webapp deployment source config-zip --resource-roup ManagedPlatform --src web.zip --name imgbadiibayoudh2
+
+--
+
+JcCQv0dB1ZjlQC5fgjWFkmTBKb4yS9SooRpq7r5Bop3jiR1Tu7rffkoibWZYalXPsYt9YM7DFXtU+ASth1CALw==
+
+
+
+DefaultEndpointsProtocol=https;AccountName=imgbadiibyoudh;AccountKey=JcCQv0dB1ZjlQC5fgjWFkmTBKb4yS9SooRpq7r5Bop3jiR1Tu7rffkoibWZYalXPsYt9YM7DFXtU+ASth1CALw==;EndpointSuffix=core.windows.net
+
+Affiliates/Labs/01 Starter
+
+in data storage create container: images
+
+create a container and upload an image to it
+webapp1 name: imgapibadiibayoudh
+
+webapp2 name: imgbadiibayoudh2
+
+create a plan: managed plan
+
+go to settings / cnfiguration
+
+Setting name: StorageConnectionString
+copy the key to it
+
+in visua studio open F:\Allfiles\Labs\01\Starter\API
+
+in a new terminal in visual studio code type dotnet build
+
+az login
+
+az webapp --list --resource-group ManagedPlatform
+
+z webapp --list --resource-group ManagedPlatform
+
+StarterAPI  az webapp deployment source config-zip --resource-roup ManagedPlatform --src api.zip --name imgbadiibayoudj
+
+
+cd F:\Allfiles\Labs\01\Starter
+
+az webapp deployment source config-zip --resource-roup ManagedPlatform --src web.zip --name imgbadiibayoudh2
+

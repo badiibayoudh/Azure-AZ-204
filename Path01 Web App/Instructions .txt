@@ -1,0 +1,132 @@
+Prerequisite
+Visual studio code
+.net 6 SDK
+Azure CLI
+
+A- Create web application and run it locally
+1- cd D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01
+2- mkdir webapp1
+3- create a templete project: dotnet new webapp
+4- run locally the web app: dotnet run
+
+B- Deploy web app on zure using CLI
+1- az webapp list --resource-group
+
+2- dontnet publish --configuration Release --output .\bin\publish
+
+3- compress-Archive .\bin\publish* .\bin\app.zip
+
+4- az webapp deployment source config-zip --src .\bin\app.zip --name xxx --resource-group xxx
+
+C- Deploy web app on azure using Visual Studio
+
+1- code .
+
+D- 
+1- create a jsn config file
+2- redeploy the web app and override
+
+// Lab 
+https://lms.godeploy.it/Courses/DelegateHome
+
+E- Create first web app: API
+1- open azure portal https://portal.azure.com
+create "storage account"
+resource group: ManagedPlatform
+storage account name: imgbadiibayoudh
+Locally-redundant storage (LRS)
+
+copy access key 1:  DefaultEndpointsProtocol=https;AccountName=imgbadiibyoudh;AccountKey=JcCQv0dB1ZjlQC5fgjWFkmTBKb4yS9SooRpq7r5Bop3jiR1Tu7rffkoibWZYalXPsYt9YM7DFXtU+ASth1CALw==;EndpointSuffix=core.windows.net
+
+in data storage create container: images
+Public access level list
+
+upload an image to the created folder
+
+create a web app with the name ame: imgapibadiibayoudh
+
+create a plan: managed plan
+
+go to settings / configuration
+
+create a new application setting with the setting name: StorageConnectionString
+copy the key to it
+
+in visual studio open F:\Allfiles\Labs\01\Starter\API
+in a new terminal in visual studio code type
+dotnet build
+
+az login
+az account set --subscription 33180adb-667d-4153-96fd-ee1d916cdb50
+
+az webapp --list --resource-group ManagedPlatform
+
+//cd F:\Allfiles\Labs\01\Starter
+cd D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Solution\API  
+
+az webapp deployment source config-zip --resource-group ManagedPlatform --src api.zip --name imgapibadiibayoudh
+
+Deployment endpoint responded with status code 202
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "ZipDeploy",
+  "end_time": "2022-12-20T19:11:43.6628503Z",
+  "id": "4285a669081e4ba2a0dda57f4c17d88c",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2022-12-20T19:11:43.6628503Z",
+  "log_url": "https://imgapibadiibayoudh.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "provisioningState": "Succeeded",
+  "received_time": "2022-12-20T19:11:38.6470361Z",
+  "site_name": "imgapibadiibayoudh",
+  "start_time": "2022-12-20T19:11:38.8191224Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://imgapibadiibayoudh.scm.azurewebsites.net/api/deployments/latest"
+}
+
+
+get https://imgapibadiibayoudh.azurewebsites.net/
+
+
+F- Build a front-end web application by using Azure Web Apps
+
+create web app with the name imgbadiibayoudh2
+
+create a configuration setting with the name ApiUrl
+enter the value: https://imgapibadiibayoudh.azurewebsites.net/
+
+open visual studio code
+in the terminal type dotnet build
+
+cd "D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Solution\Web"
+az webapp deployment source config-zip --resource-group ManagedPlatform --src web.zip --name imgbadiibayoudh2
+
+Deployment endpoint responded with status code 202
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "ZipDeploy",
+  "end_time": "2022-12-20T19:50:33.6001661Z",
+  "id": "35835e87eefc486585641aee647cdc27",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2022-12-20T19:50:33.6001661Z",
+  "log_url": "https://imgbadiibayoudh2.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "provisioningState": "Succeeded",
+  "received_time": "2022-12-20T19:50:26.4085095Z",
+  "site_name": "imgbadiibayoudh2",
+  "start_time": "2022-12-20T19:50:26.5803836Z",
+  "status": 4,
+  "status_text": "",
+
+get https://imgbadiibayoudh2.azurewebsites.net/

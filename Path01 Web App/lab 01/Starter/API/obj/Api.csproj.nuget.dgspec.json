@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Atelier\\Projects\\Azure_AZ-204_Developing-solutions\\Path01\\lab 01\\Starter\\API\\Api.csproj": {}
+  },
+  "projects": {
+    "D:\\Atelier\\Projects\\Azure_AZ-204_Developing-solutions\\Path01\\lab 01\\Starter\\API\\Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Atelier\\Projects\\Azure_AZ-204_Developing-solutions\\Path01\\lab 01\\Starter\\API\\Api.csproj",
+        "projectName": "Api",
+        "projectPath": "D:\\Atelier\\Projects\\Azure_AZ-204_Developing-solutions\\Path01\\lab 01\\Starter\\API\\Api.csproj",
+        "packagesPath": "C:\\Users\\badii.bayoudh\\.nuget\\packages\\",
+        "outputPath": "D:\\Atelier\\Projects\\Azure_AZ-204_Developing-solutions\\Path01\\lab 01\\Starter\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\badii.bayoudh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.12.0, )"
+            },
+            "Flurl": {
+              "target": "Package",
+              "version": "[3.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

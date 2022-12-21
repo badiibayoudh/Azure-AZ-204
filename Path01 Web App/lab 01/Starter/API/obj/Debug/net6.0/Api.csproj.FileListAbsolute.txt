@@ -1,0 +1,56 @@
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\appsettings.json
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Api.exe
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Api.deps.json
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Api.runtimeconfig.json
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Api.dll
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Api.pdb
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Azure.Core.dll
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Azure.Storage.Common.dll
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Flurl.dll
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\System.IO.Hashing.dll
+F:\Allfiles\Labs\01\Starter\API\bin\Debug\net6.0\System.Memory.Data.dll
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.csproj.AssemblyReference.cache
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.AssemblyInfoInputs.cache
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.AssemblyInfo.cs
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.csproj.CoreCompileInputs.cache
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.MvcApplicationPartsAssemblyInfo.cache
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\staticwebassets.build.json
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\staticwebassets.development.json
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\scopedcss\bundle\Api.styles.css
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.csproj.CopyComplete
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.dll
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\refint\Api.dll
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.pdb
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\Api.genruntimeconfig.cache
+F:\Allfiles\Labs\01\Starter\API\obj\Debug\net6.0\ref\Api.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\appsettings.json
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Api.exe
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Api.deps.json
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Api.runtimeconfig.json
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Api.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Api.pdb
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Azure.Core.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Azure.Storage.Common.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Flurl.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\System.IO.Hashing.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.csproj.AssemblyReference.cache
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.AssemblyInfoInputs.cache
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.AssemblyInfo.cs
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.csproj.CoreCompileInputs.cache
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\scopedcss\bundle\Api.styles.css
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.csproj.CopyComplete
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\refint\Api.dll
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.pdb
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\Api.genruntimeconfig.cache
+D:\Atelier\Projects\Azure_AZ-204_Developing-solutions\Path01\lab 01\Starter\API\obj\Debug\net6.0\ref\Api.dll
