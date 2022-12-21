@@ -1,0 +1,82 @@
+https://lms.godeploy.it/Courses/DelegateView/a51ccaef-5780-ed11-9561-00155d800002
+
++
+Prerequisite
+install azure function core tools (microsoft link to GIT repo)
+
++
+Create Storage account
+Resourcegroup: Serverless
+Name: functorebadiibayoudh
+Region: Germany west
+Localy redundant
+Key1: 
+DefaultEndpointsProtocol=https;AccountName=functorebadiibayoudh;AccountKey=U0JT1BwIxnvMBc9Ab+BpZ4UCQh8G7E+NDA8N/5iDiVIfoxL7ED4p4Yw4oLr6m1F3h76MRB0YGNUn+ASt0F7J4w==;EndpointSuffix=core.windows.net
++
+Create function app
+name: funclogicbadiibayoudh
+Runtime: .Net 
+Region: Germany west
+OS: linux
+Pricng plan: Consumptio (Serverless)
+select Storage account
+Monitoring: no
+
++ Write the fucntion
+cd F:\Allfiles\Labs\02\Starter\func
+
+F:\Allfiles\Labs\02\Starter\func
+// create project
+func init --worker-runtime dotnet --force
+dont build
+func new --template "HTTP trigger" --name "Echo"
+imlent the Azure function
+
++ Test the function
+// run the azure function in the emulator
+func start --build
+http://localhost:7071/api/Echo
+// install the HTTP debugger
+dotnet tool install -g Microsoft.dotnet-httprepl
+// test
+httprepl http://localhost:7071
+cd api
+cd echo
+post --content 3
+
++
+creta second function
+func new
+timertrigger
+name: Recurring
+func start --build
++
+in functorebadiibayoudh
+cretae private contanier with name content
+upload json file fron lab2
++
+
+func new --template "HTTP trigger" --name "GetSettingInfo"
+modify the function
+install aditional package
+func extensions install --package Microsoft.azure.webJobs.Extensions.Storage --version 5.0.1
++
+//pulish in azure
+az login
+az account set --subscription 33180adb-667d-4153-96fd-ee1d916cdb50
+func azure functionapp publish funclogicbadiibayoudh
+
+Functions in funclogicbadiibayoudh:
+    Echo - [httpTrigger]
+        Invoke url: https://funclogicbadiibayoudh.azurewebsites.net/api/echo
+
+    GetSettingInfo - [httpTrigger]
+        Invoke url: https://funclogicbadiibayoudh.azurewebsites.net/api/getsettinginfo
+
+    Recurring - [timerTrigger]
+
+// add connection string to the function app
+
+AzureWebJobsStorage configuration setting should be already created  in the azure function app. this is done when publishin/deploying the aszur project
+
+Test in Azure : go to the function app => functions => Code + Test
