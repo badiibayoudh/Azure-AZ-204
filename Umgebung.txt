@@ -1,0 +1,7 @@
++
+Azure
+https://azure.microsoft.com/de-de/get-started/azure-portal
+
++
+Go Developer
+https://lms.godeploy.it/Courses/DelegateHome
