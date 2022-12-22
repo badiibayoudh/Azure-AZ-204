@@ -1,0 +1,36 @@
+application must be registered in AD: the application id has to be given to azure
+
+Azure Active Directory > app Registrations>register an application
+webappoidc
+Application id:
+9c058b3d-f7d2-4388-94e6-f8f227814b85
+Directory id:
+769e17f6-70b8-45a4-a5f4-a0a495788aca
++ >authentification>add a platform
+
+https://localhost:5001/
+https://localhost:5001/signout-oidc
+ID tokens
+
+uri: https://localhost:5001/signin-oidc
+
++
+> dfault directory > users > add new user
+name: aad_lab_user1
+
++
+in Terminal
+cd F:\Allfiles\Labs\06\Starter\OIDCClient
+
+dotnet new mvc --auth SingleOrg --client-id 9c058b3d-f7d2-4388-94e6-f8f227814b85 --tenant-id 769e17f6-70b8-45a4-a5f4-a0a495788aca --domain badiibayoudhgmail.onmicrosoft.com
+code. 
+
+edit launchSettings.jso
+edit OIDClient.projcs
+dotnet run
+dotnet build
+
+goto https://localhost:5001/
+aad_lab_user1@badiibayoudhgmail.onmicrosoft.com
+
++
