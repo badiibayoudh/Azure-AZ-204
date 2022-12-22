@@ -1,0 +1,108 @@
++
+create a storage account
+new resourceGroup: ConfidentialStack
+name: securestoresbadiibayoudh
+region: Germany West Central
+LRS
+
+Storage account > Access Keys
+connection String:
+DefaultEndpointsProtocol=https;AccountName=securestoresbadiibayoudh;AccountKey=Uy+/w87UzGg2A24AyOzqksPotSGNN0oyYNHEYeSJal8ik4awSB9ZtkdFm+E55C4Rh8oYT0inYVt0+AStP2SHXg==;EndpointSuffix=core.windows.net
++
+create a Key Vault
+name: securevaultbadiibayoudh
+
++create Azure function app
+name: securefuncbadiibayoudh
+Runtim stack: .Net
+6
+Linux
+Serveless
+select securestoresbadiibayoudh as storage account for the function
+
+
++ crate system assgend identity for the function
+Settings > identity> Status
+
++ configure the key Vault
+
+create a secret
+> secrets>
+name: storagecredentials
+copy connectionstring value as secret value
+
+secret identifier:
+https://securevaultbadiibayoudh.vault.azure.net/secrets/storagecredentials/8ec4c743a78d4eb8bbb1f5cc0d0019ba
+
+>access policies> create an access policy
+
+get
+
+select securefuncbadiibayoudh related system assigned managed identity
++
+go to my securefuncbadiibayoudh
+>Settings>Configuration
+create setting StorageConnectionString
+with the following value
+@Microsoft.KeyVault(SecretUri=https://securevaultbadiibayoudh.vault.azure.net/secrets/storagecredentials/8ec4c743a78d4eb8bbb1f5cc0d0019ba)
+
++
+in Terminal
+cd F:\Allfiles\Labs\07\Starter\func
+
+func init --worker-runtime dotnet --force
+
+func new --template "HTTP trigger" --name "FileParser"
+dotnet build
+
+code.
+
+edit local.settings.json:
+
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "StorageConnectionString": "TEST VALUE"
+    }
+}
+
+edit fileParser.js:
+
+using System;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+
+namespace func
+{
+    public static class FileParser
+    {
+        [FunctionName("FileParser")]
+        public static async Task<IActionResult> Run(
+            [HttpTrigger("get")] HttpRequest req)
+        {
+            string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
+            return new OkObjectResult(connectionString);
+        }
+    }
+}
+
+http://localhost:7071/api/FileParser
+
++
+in Terminal
+az login
+func azure functionapp publish securefuncbadiibayoudh
+func start --build
+
++
+> functions > function FileParser > Get Url
+copy to the browser: https://securefuncbadiibayoudh.azurewebsites.net/api/FileParser?code=nuH4NMZabyaoBMQ7zdK_zomyrSgfwGOFW4UNBW0LswCbAzFuf8GhpQ==
+
