@@ -8,3 +8,10 @@ https://lms.godeploy.it/Courses/DelegateHome
 
 username: bayoudh_badii@yahoo.fr
 password:Amoultii3.
+
++ Online
+Labs:
+https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/
+
+Git:
+https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/
